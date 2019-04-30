@@ -4,7 +4,7 @@ import {COMMANDS} from "../../../enum/enum";
 import {start} from "./start";
 
 export function handleCommands(bot: Telegraf<ContextMessageUpdate>) {
-    bot.command(COMMANDS.START, start);
+  bot.command(COMMANDS.START, start);
 }
 
 // function createResponse(ctx: Composer<Telegraf>, fn) {

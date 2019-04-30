@@ -1,3 +1,3 @@
 export enum COMMANDS {
-    START = "start"
+  START = "start",
 }
