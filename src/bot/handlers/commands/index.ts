@@ -1,21 +1,14 @@
 import Telegraf, {ContextMessageUpdate} from "telegraf";
+import {COMMANDS} from "../../../enum/enum";
+// import {logError, logSentMsg} from "../../../utils/logger";
+import {start} from "./start";
 
 export function handleCommands(bot: Telegraf<ContextMessageUpdate>) {
-    bot.command('generate', ctx => createResponse(ctx, commands.QUIZ, commands.QUIZ_RESULT));
-    bot.command('start', ctx => createResponse(ctx, commands.BEGIN));
-    bot.command('fun', ctx => createResponse(ctx, commands.FUN));
+    bot.command(COMMANDS.START, start);
 }
 
-function createResponse(ctx, fn) {
-    fn(ctx)
-        .then(logSentMsg)
-        .catch(logError);
-}
-
-function logSentMsg(msg) {
-    console.log(msg)
-}
-
-function logError(err) {
-    console.error(err)
-}
+// function createResponse(ctx: Composer<Telegraf>, fn) {
+//     fn(ctx)
+//         .then(logSentMsg)
+//         .catch(logError);
+// }

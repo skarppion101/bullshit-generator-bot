@@ -1,12 +1,9 @@
 // @ts-ignore
-import {loadEnvVariables} from "./env";
-import {initBot} from "./bot/bot";
+import {loadEnvVariables} from "./utils/env";
+import {createBot} from "./bot/bot";
 
 const env = loadEnvVariables();
 
 console.log("Starting telegram bot");
 
-initBot(env)
-    .then(bot => {
-        bot.send();
-    });
+createBot(env);
