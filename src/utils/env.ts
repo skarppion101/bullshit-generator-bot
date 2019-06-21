@@ -1,4 +1,5 @@
 import {config} from "dotenv";
+import path from "path";
 
 export class Env {
   public BOT_TOKEN: string;
@@ -14,6 +15,6 @@ export class Env {
 }
 
 export function loadEnvVariables(): Env {
-  config({path: "../.env"});
+  config({path: path.join(__dirname, "../../../.env")});
   return new Env(process.env);
 }
