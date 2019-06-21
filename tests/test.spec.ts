@@ -1,4 +1,4 @@
-import {logError, logSentMsg} from "../src/utils/logger";
+import {logError, logMsg} from "../src/utils/logger";
 
 function dataParam(param: IData) {
   return param;
@@ -6,7 +6,7 @@ function dataParam(param: IData) {
 
 function promise() {
   subPromise2()
-    .then(logSentMsg)
+    .then(logMsg)
     .catch(logError);
 
   return subPromise1()

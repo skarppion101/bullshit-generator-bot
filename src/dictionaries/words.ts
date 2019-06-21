@@ -1,3 +1,5 @@
+import {getRandomInt} from "../utils/utils";
+
 const adverbs = ["appropriately", "assertively", "authoritatively", "collaboratively", "compellingly", "competently", "completely",
   "continually", "conveniently", "credibly", "distinctively", "dramatically", "dynamically", "efficiently",
   "energistically", "enthusiastically", "globally", "holisticly", "interactively", "intrinsically", "monotonectally",
