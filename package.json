@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/skarppion101/bullshit-generator-bot/issues"
   },
-  "homepage": "https://github.com/skarppion101/bullshit-generator-bot#readme",
+  "homepage": "https://github.com/skarppion101/bullshit-generator-bot",
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node"
