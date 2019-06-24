@@ -28,6 +28,8 @@
   "dependencies": {
     "bluebird": "^3.5.5",
     "dotenv": "^8.0.0",
+    "restyped-axios": "^2.0.0",
+    "restyped-giphy-api": "^1.0.1",
     "socks5-https-client": "^1.2.1",
     "telegraf": "^3.30.1"
   },
